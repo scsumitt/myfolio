@@ -1,0 +1,476 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style-type: none;
+}
+.clr{
+    clear: both;
+}
+.full-wrapper{
+    width: 100%;
+}
+.wrapper{
+    margin: 0 auto;
+    width: 1170px;
+}
+/*alll common css end--------------------*/
+/* preloader start-----------------------------*/
+/* typed */
+.typed::after {
+	content: '|';
+	display: inline;
+	-webkit-animation: blink 0.7s infinite;
+	-moz-animation: blink 0.7s infinite;
+	animation: blink 0.7s infinite;
+}
+
+/*Removes cursor that comes with typed.js*/
+.typed-cursor{
+   opacity: 0;
+	display: none;
+}
+/*Custom cursor animation*/
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+/* typed */
+.preloader{
+    position :fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background: white;
+    z-index: 99999;
+}
+.load{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* preloader end---------------------------------- */
+/*logo & menu part start---------------------------*/
+.head{
+position: fixed;
+z-index: 99999;
+top: 0;
+width: 100%;
+transition: all linear .3s;
+height: 60px;
+}
+.head-bg{
+    animation: menu 1s;
+    background: hsl(180, 4%, 36%);
+}
+@keyframes menu {
+    from {
+        top: -80px;
+    }
+    to {
+        top: 0;
+    }
+}
+.logo{
+    width: 270px;
+    float: left;
+}
+.logo img{
+    
+    padding-top: 18px;
+}
+.menu{
+    width: 900px;
+    float: left;
+    text-align: right;
+}
+.menu ul li{
+    display: inline-block;
+}
+.menu ul li a{
+    line-height: 60px;
+    padding-right: 50px;
+    font-size: 12px;
+    font-weight: 400;
+    color: white;
+    text-transform: uppercase;
+    transition: all  linear .3s;
+}
+.menu ul li a:hover{
+    color: blue;
+}
+.menu ul li.active a {
+    color: blue;
+}
+/*logo & menu part end----------------------*/
+/*banner part start---------------------------*/
+.banner{
+    background: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 210px 0 210px;
+}
+.banner-overly{
+background: rgba(9, 16, 13, 0.6);
+}
+.banner-text{
+    text-align: center;
+    padding-top: 100px;
+    color: white;
+}
+.banner-text h3{
+    font-size: 30px;
+    font-weight: 400;
+    padding-bottom: 25px;
+}
+.banner-text h1{
+    font-size: 68px;
+    font-weight: 700;
+    padding-bottom: 18px;
+    text-transform: uppercase;
+    letter-spacing: 11px;
+}
+.banner-text p{
+    font-size: 18px;
+    font-weight: 400;
+    
+}
+.banner-text button{
+  margin-bottom: 210px;
+    padding: 20px 40px;
+    background: #ead913;
+    border: none;
+}
+.banner-text a{
+    font-size: 14px;
+    font-weight: 700;
+    color: black;
+}
+.icon11{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+/*banner part end---------------------------*/
+/*about part start-------------------------------*/
+.ab{
+    background: #ffffff;
+}
+.about-text{
+    text-align: center;
+    padding: 100px 0 80px;
+}
+.about-text h3{
+    font-size: 25px;
+    font-weight: 700;
+    padding-bottom: 77px;
+    color:#02918c;
+}
+.about-text p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    padding-bottom: 20px;
+    color: #7e8287;
+}
+.about-text strong{
+    font-size: 23px;
+    text-transform: capitalize;
+    color: #7e8287;
+}
+/*about part end-------------------------------*/
+/* icon part start--------------------------- */
+.ip{
+    background: #ffffff;
+}
+.icon-part{
+    padding-bottom: 100px;
+}
+.icon-item{
+    width: 290px;
+    border-right: 1px solid#d9dbdb;
+    color: #7e8287;
+    float: left;
+    text-align: center;
+}
+
+.icon-item h3{
+    padding-bottom: 30px;
+    font-size: 16px;
+    
+    
+}
+.icon-item p{
+    font-size: 11px;
+    color: #7e8287;
+    line-height: 20px;
+}
+.br-none{
+    border: none !important;
+}
+/* icon part end--------------------------- */
+/* service part start------------------------- */
+.service{
+    background: url(../images/MYFOLIO.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.service-title{
+    text-align: left;
+    padding-top: 75px;
+    padding-bottom: 40px;
+}
+.service-title h3{
+    font-size: 46px;
+    color: #02918c;
+    font-weight: 700;
+    padding-bottom: 40px;
+
+}
+.service-title img{
+    padding-bottom: 25px;
+}
+.service-title p{
+    font-size: 16px;
+    font-weight: 40;
+    color: #7e8287;
+    line-height: 20px;
+    padding-bottom: 60px;
+}
+.left-section{
+    width: 50%;
+}
+.right-section{
+    width: 50%;
+}
+.service-item img{
+    padding-bottom: 16px;
+}
+.service-item{
+    width: 45%;
+    float: left;
+}
+.service-item h3{
+    font-size: 16px;
+font-weight: 400;
+color: #7e8287;
+padding-bottom: 19px;
+}
+.service-item p{
+    font-size: 11px;
+    font-weight: 400;
+    color: #7e8287;
+    padding-bottom: 55px;
+    line-height: 20px;
+}
+.service-main{
+    padding-bottom: 85px;
+}
+/* service part end-------------------------- */
+/* my work start -------------*/
+.mw{
+    background: #ffffff;
+}
+.my-work{
+    padding-top: 110px;
+    text-align: center;
+}
+.my-work h3{
+    font-size: 46px;
+    font-weight: 900;
+    color: #02918c;
+    padding-bottom: 50px;
+}
+.my-work img{
+    padding-bottom: 30px;
+}
+.my-work p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #7e8287;
+    line-height: 20px;
+    padding-bottom: 75px;
+}
+/* my work end -------------*/
+/* gallery part start---------------------------*/
+.gallery{
+    padding-bottom: 100px;
+    
+}
+.gallery-item{
+    width :100%;
+  height: 100%;
+    
+}
+.gallery-item img{
+  height: 25%;
+  width :25%;
+  float: left;
+}
+/* gallery part end ---------------------------*/
+/* contact part start--------------------------------*/
+.cm{
+    background: #ffffff;
+}
+.contact-me{
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+.contact-me h3{
+    font-size: 46px;
+    font-weight: 900;
+    color: #02918c;
+    padding-bottom: 30px;
+}
+.contact-me img{
+    padding-bottom: 30px;
+}
+.contact-me p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #7e8287;
+    line-height: 30px;
+}
+/* contact part end--------------------------------*/
+/* from part start----------------------------*/
+.last{
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background:#0b0b0b;
+}
+.from-part{
+    text-align: center;
+    
+}
+.from-item input{
+    width: 60%;
+    text-align: center;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    background: transparent;
+    padding-bottom: 90px;
+    position: relative;
+    
+}
+.after1{
+    position: relative;
+}
+.after1:after{
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 650px;
+    background: #898989;
+    top: 30px;
+    left: 260px; 
+}
+.after2{
+    position: relative;
+    text-align: center;
+}
+.after2:after{
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 910px;
+    background: #898989;
+    top: 30px;
+    left: 130px; 
+}
+.from-batton{
+    text-align: center;
+    padding-top: 175px;
+    padding-bottom: 65px;
+
+}
+.from-batton batton{
+    text-transform: uppercase;
+    padding: 20px 65px;
+    background: #cfc91d;
+    font-size: 14px;
+    font-weight: 700;
+    color: black;
+}
+/* from part end ----------------------------*/
+.my{
+    padding-top: 35px;
+    padding-bottom: 35px;
+    background: #000000;
+}
+.myfolio{
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    color: #7e8287;
+    text-transform: uppercase;
+   
+}
+/* counterup start -------------------*/
+.counterup{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #484c52;
+}
+.counter-item{
+    text-align: center;
+    float: left;
+    width: 25%;
+
+}
+/* counterup end -------------------*/
+/* back to top start  -------------------*/
+.back-to-top{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+}
+.back-to-top i{
+    font-size: 30px;
+    color: #f0da12;
+}
+/* back to top end  -------------------*/
+
+/* video part start-------------------*/
+.video{
+    
+    background: url(../images/video.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.video-overly{
+    background: hsl(180, 11%, 54%), 145);
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+.icon{
+    text-align: center;
+}
+.icon i{
+    font-size: 52px;
+}
+
+/* video part end-------------------*/
